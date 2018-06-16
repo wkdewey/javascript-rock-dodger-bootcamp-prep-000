@@ -79,6 +79,8 @@ function createRock(x) {
        rock.style.top = `${top += 2}px`;
        window.requestAnimationFrame(moveRock);
        
+     } else {
+       rock.remove();
      }
 
     /**
