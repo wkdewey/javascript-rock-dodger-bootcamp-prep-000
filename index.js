@@ -140,25 +140,25 @@ function moveDodger(e) {
 function moveDodgerLeft() {
   // implement me!
   left = positionToInteger(DODGER.style.left);
-  function step() {
+  function updateLeft() {
     if (left >= 0) {
       DODGER.style.left = `${left -= 4}px`;
-      window.requestAnimationFrame(step);
+      window.requestAnimationFrame(updateLeft);
     }
   }
-  window.requestAnimationFrame(step);
+  window.requestAnimationFrame(updateLeft);
 }
 
 function moveDodgerRight() {
   // implement me!
   right = positionToInteger(DODGER.style.right);
-  function step() {
+  function updateRight() {
     if (right >= 0) {
       DODGER.style.right = `${right -= 4}px`;
-      window.requestAnimationFrame(step);
+      window.requestAnimationFrame(updateRight);
     }
   }
-  window.requestAnimationFrame(step);
+  window.requestAnimationFrame(updateRight);
 }
 
 /**
