@@ -131,6 +131,7 @@ function moveDodger(e) {
      e.stopPropagation();
    }
    else if (e.which === RIGHT_ARROW) {
+     console.log("right pressed!")
      e.preventDefault();
      moveDodgerRight();
    }
