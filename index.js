@@ -140,7 +140,7 @@ function moveDodgerLeft() {
   left = positionToInteger(DODGER.style.left);
   function step() {
     DODGER.style.left = `${left -= 4}px`;
-    if (left >= 0) {
+    if (left >= 4) {
       window.requestAnimationFrame(step);
     }
   }
@@ -152,7 +152,7 @@ function moveDodgerRight() {
   right = positionToInteger(DODGER.style.right);
   function step() {
     DODGER.style.right = `${right -= 4}px`;
-    if (right >= 0) {
+    if (right >= 4) {
       window.requestAnimationFrame(step);
     }
   }
