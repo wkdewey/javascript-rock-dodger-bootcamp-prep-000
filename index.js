@@ -152,7 +152,7 @@ function moveDodgerLeft() {
 function moveDodgerRight() {
   // implement me!
   right = positionToInteger(DODGER.style.right);
-  function updateLeft() {
+  function updateRight() {
     if (right >= 4) {
       DODGER.style.right = `${right -= 4}px`;
       window.requestAnimationFrame(updateRight);
