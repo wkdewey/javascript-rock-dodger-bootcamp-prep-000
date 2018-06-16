@@ -153,7 +153,7 @@ function moveDodgerRight() {
   // implement me!
   left = positionToInteger(DODGER.style.left);
   function updateRight() {
-    if (left <= GAME_WIDTH - 4) {
+    if (left <= GAME_WIDTH - 44) {
       DODGER.style.left = `${left += 4}px`;
       window.requestAnimationFrame(updateRight);
     }
