@@ -143,7 +143,7 @@ function moveDodgerLeft() {
   function updateLeft() {
     if (left >= 4) {
       DODGER.style.left = `${left -= 4}px`;
-      console.log(DODGER.style.left, DODGER.style.right);
+      console.log(DODGER.style.right);
       window.requestAnimationFrame(updateLeft);
     }
   }
@@ -156,7 +156,7 @@ function moveDodgerRight() {
   function updateRight() {
     if (right >= 4) {
       DODGER.style.right = `${right -= 4}px`;
-      console.log(DODGER.style.left, DODGER.style.right);
+      console.log(DODGER.style.right);
       window.requestAnimationFrame(updateRight);
     }
   }
